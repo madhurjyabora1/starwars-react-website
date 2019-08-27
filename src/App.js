@@ -35,7 +35,7 @@ class App extends Component {
           render={props => {
             const { charName } = props.match.params;
             const foundCharacter = this.state.people.find(
-              person => person.name.split(" ").join("") == charName
+              person => person.name.split(" ").join("") === charName
             );
             return <Character {...props} info={foundCharacter} />;
           }}

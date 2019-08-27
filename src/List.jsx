@@ -5,7 +5,7 @@ class List extends Component {
   render() {
     const people = this.props.people;
     return (
-      <div className="">
+      <div>
         {people.map(p => {
           return (
             <div key={p.url}>

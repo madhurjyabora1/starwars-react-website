@@ -22,7 +22,7 @@ const Character = ({ info }) => {
               <h2>Vehicles:</h2>
               <ul>
                 {info.vehicles.map((vehicle, index) => (
-                  <li key={index}>{vehicle}</li>
+                  <li key={index}>{vehicle.name}</li>
                 ))}
               </ul>
             </li>
